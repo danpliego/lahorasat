@@ -1,91 +1,27 @@
-/* line 5, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* line 22, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../../../Library/Ruby/Gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
+@import "compass/reset";
 
 @font-face {
   font-family: "Banana";
   font-weight: 400;
-  src: url("../fonts/BananaGrotesk-Regular.otf");
+  src: url('../fonts/BananaGrotesk-Regular.otf');
 }
+
 @font-face {
   font-family: "Meek";
   font-weight: 400;
-  src: url("../fonts/Meek_Display_Medium.ttf");
+  src: url('../fonts/Meek_Display_Medium.ttf');
 }
-/* line 17, ../sass/main.scss */
+
 *, ::before, ::after {
   box-sizing: border-box;
 }
 
-/* line 21, ../sass/main.scss */
 html {
   display: flex;
   min-height: 100%;
   width: 100%;
 }
 
-/* line 27, ../sass/main.scss */
 html, body {
   font-family: 'Banana';
   font-size: 18px;
@@ -93,110 +29,78 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 34, ../sass/main.scss */
 :root {
   --primary: #603DBD;
   --secondary: #D5FC6D;
   --tertiary: #FC6C6C;
 }
 
-/* line 40, ../sass/main.scss */
 a, .btn {
   transition: all 0.15s ease-in-out;
   display: block;
 }
-/* line 44, ../sass/main.scss */
-a:hover, .btn:hover {
-  transform: translate(0px, -4px);
-}
 
-/* line 49, ../sass/main.scss */
 h1, h2, h3, h4, h5, h6 {
   line-height: 100%;
 }
 
-/* line 53, ../sass/main.scss */
 h1, h2 {
   font-family: Meek, sans-serif;
 }
 
-/* line 57, ../sass/main.scss */
 h1 {
   font-size: 72px;
 }
-@media (max-width: 576px) {
-  /* line 57, ../sass/main.scss */
-  h1 {
-    font-size: 46px;
-  }
-}
 
-/* line 64, ../sass/main.scss */
 h2 {
   font-size: 46px;
 }
-@media (max-width: 576px) {
-  /* line 64, ../sass/main.scss */
-  h2 {
-    font-size: 32px;
-  }
-}
 
-/* line 71, ../sass/main.scss */
 h3 {
   font-size: 40px;
 }
-@media (max-width: 576px) {
-  /* line 71, ../sass/main.scss */
-  h3 {
-    font-size: 30px;
-  }
-}
 
-/* line 78, ../sass/main.scss */
 h4 {
   font-size: 24px;
 }
-@media (max-width: 576px) {
-  /* line 78, ../sass/main.scss */
-  h4 {
-    font-size: 18px;
-  }
-}
 
-/* line 85, ../sass/main.scss */
 body {
   color: var(--primary);
 }
 
-/* line 89, ../sass/main.scss */
 p, li {
   line-height: 160%;
 }
 
-/* line 93, ../sass/main.scss */
 hr {
   border-color: #fff;
 }
 
-/* line 97, ../sass/main.scss */
 ul {
   list-style: disc;
   padding-left: 1rem;
   margin-bottom: 2rem;
+  background: blue;
 }
-/* line 103, ../sass/main.scss */
+
+ul {
+  list-style: disc;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  background: blue; 
+}
+
 ul li {
   margin-bottom: 0.5rem;
 }
 
-/* line 110, ../sass/main.scss */
+// Helpers
+
 .shadow-yellow {
   background: var(--secondary);
   color: var(--primary);
 }
 
-/* line 115, ../sass/main.scss */
 .btn {
   border: 2px solid var(--primary);
   padding: 1rem;
@@ -205,72 +109,55 @@ ul li {
   background: var(--secondary);
   display: inline-flex;
   align-items: center;
-  color: var(--primary) !important;
+  color: var(--primary)!important;
 }
 
-/* line 128, ../sass/main.scss */
+// Page layout
+
 .gray-section {
   background: #EFECF7 url(../images/bg-gray.png) repeat;
   background-size: cover;
 }
 
-/* line 133, ../sass/main.scss */
-.header {
+.gray-section .header {
   border-bottom: 1px solid var(--primary);
   position: relative;
   padding: 1.5rem;
 }
-/* line 138, ../sass/main.scss */
-.header .logo {
+
+.gray-section .logo {
   width: 100%;
   text-align: center;
 }
 
-/* line 144, ../sass/main.scss */
 .hero {
   padding: 4rem 0;
 }
-@media (max-width: 576px) {
-  /* line 144, ../sass/main.scss */
-  .hero {
-    padding: 2rem 0;
-  }
-  /* line 149, ../sass/main.scss */
-  .hero .hero-img {
-    order: 1;
-  }
+
+.hero-img {
+  order: 1;
 }
 
-/* line 155, ../sass/main.scss */
 .workshop .row {
   height: 100%;
   background: var(--tertiary);
 }
 
-/* line 160, ../sass/main.scss */
 .purple-content {
-  background: var(--primary) url("../images/bg-purple.jpg");
+  background: var(--primary) url('../images/bg-purple.jpg');
   background-size: cover;
 }
 
-/* line 165, ../sass/main.scss */
 .section-content {
   color: #fff;
   padding: 3rem;
 }
-@media (max-width: 576px) {
-  /* line 165, ../sass/main.scss */
-  .section-content {
-    padding: 1.5rem;
-  }
-}
 
-/* line 174, ../sass/main.scss */
 .disclaimer {
   font-size: 0.7rem;
   position: relative;
 }
-/* line 178, ../sass/main.scss */
+
 .disclaimer .content {
   border: 1px solid #fff;
   padding: 1rem;
@@ -279,19 +166,7 @@ ul li {
   position: relative;
   line-height: 150%;
 }
-/* line 187, ../sass/main.scss */
-.disclaimer:after {
-  content: ' ';
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 5px;
-  top: 5px;
-  border: 1px solid #fff;
-}
 
-/* line 199, ../sass/main.scss */
 .signup-btn {
   font-size: 1.5rem;
   height: 85px;
@@ -299,35 +174,11 @@ ul li {
   display: flex;
   justify-content: center;
 }
-@media (max-width: 576px) {
-  /* line 199, ../sass/main.scss */
-  .signup-btn {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-    border-radius: 0;
-    z-index: 30;
-    font-size: 1.2rem;
-    height: 60px;
-  }
-}
 
-@media (max-width: 576px) {
-  /* line 218, ../sass/main.scss */
-  .footer-logos {
-    padding-bottom: 4rem;
-  }
-}
-/* line 223, ../sass/main.scss */
 .footer-logos a {
   padding: 0.5rem;
 }
-/* line 225, ../sass/main.scss */
-.footer-logos a:hover {
-  transform: translate(-2px 0);
-}
-/* line 230, ../sass/main.scss */
+
 .footer-logos img {
   width: 36px;
   height: auto;
